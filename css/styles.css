@@ -10,9 +10,15 @@
   --main-black: #212121;
 }
 
+.container {
+  width: 1200px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-black);
+  width: 1600px;
+  justify-content: center;
 }
 
 .logo {
