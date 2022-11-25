@@ -13,13 +13,24 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-black);
 }
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Header -------------------------------------------------------------------------------------------------------------------------*/
+header {
+  border-bottom: 1px solid #ececec;
+}
 .logo-header {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -29,6 +40,9 @@ body {
   line-height: 1.19;
   width: 145px;
 }
+.studio-black {
+  color: var(--logo-black);
+}
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -36,17 +50,13 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
-}
-.studio-black {
-  color: var(--logo-black);
 }
 .studio-white {
   color: var(--text-white);
 }
 header nav {
-  border-bottom: 1px solid #ececec;
   background: #ffffff;
+  display: flex;
 }
 
 .nav-header {
@@ -75,9 +85,12 @@ header nav {
 .contact:focus {
   color: var(--light-blue);
 }
+/* Header----------------------------------------------------------------------------------------------- */
 
+/* BUY SECTION------------------------------------------------------------------------------------- */
 .offer {
   background-color: var(--background-dark);
+  border: solid red;
 }
 .offer h1 {
   font-weight: 900;
@@ -104,7 +117,7 @@ header nav {
   line-height: 1.88;
   color: var(--text-white);
 }
-
+/* BUY SECTION------------------------------------------------------------------------------------- */
 .articles {
   list-style: none;
 }
