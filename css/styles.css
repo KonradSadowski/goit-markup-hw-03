@@ -90,7 +90,6 @@ header nav {
 /* BUY SECTION------------------------------------------------------------------------------------- */
 .offer {
   background-color: var(--background-dark);
-  border: solid red;
 }
 .offer h1 {
   font-weight: 900;
