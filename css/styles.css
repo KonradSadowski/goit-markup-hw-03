@@ -9,18 +9,18 @@
   --logo-black: #000000;
   --main-black: #212121;
 }
-
-.container {
-  width: 1200px;
+* {
+  box-sizing: border-box;
 }
+
+
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-black);
-  width: 1600px;
 }
 
-.logo {
+.logo-header {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: var(--light-blue);
@@ -28,13 +28,25 @@ body {
   font-size: 26px;
   line-height: 1.19;
   width: 145px;
-  height: 31px;
+}
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: var(--light-blue);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
 }
 .studio-black {
   color: var(--logo-black);
 }
 .studio-white {
   color: var(--text-white);
+}
+header nav {
+  border-bottom: 1px solid #ececec;
+  background: #ffffff;
 }
 
 .nav-header {
