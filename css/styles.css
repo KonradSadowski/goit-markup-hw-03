@@ -19,18 +19,25 @@ body {
 }
 .container {
   width: 1200px;
-  margin: 0px auto;
-  padding: 0px 15px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 /* Header -------------------------------------------------------------------------------------------------------------------------*/
 header {
   border-bottom: 1px solid #ececec;
+  background: #ffffff;
 }
+header .container {
+  display: flex;
+}
+header nav {
+  display: flex;
+}
+
 .logo-header {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -38,6 +45,10 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  padding-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  letter-spacing: 0.03em;
   width: 145px;
 }
 .studio-black {
@@ -54,35 +65,61 @@ header {
 .studio-white {
   color: var(--text-white);
 }
-header nav {
-  background: #ffffff;
-  display: flex;
-}
 
-.nav-header {
+.menu-list {
   list-style: none;
+  padding-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0;
+  display: flex;
+  width: 254px;
 }
-.nav-header a {
+.menu-item {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--main-black);
+  letter-spacing: 0.02em;
 }
-.nav-header a:hover,
-.nav-header a:focus {
+[href='portfolio.html'] {
+  padding-left: 46px;
+  padding-right: 47px;
+}
+.menu-item:hover,
+.menu-item:focus {
   color: var(--light-blue);
 }
 
-.contact {
+.contacts {
+  padding: 32px 27px 32px 371px;
+}
+.contact-mail {
   text-decoration: none;
   color: var(--text-grey);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-right: 50px;
+  width: 135px;
 }
-.contact:hover,
-.contact:focus {
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--light-blue);
+}
+.contact-tel {
+  text-decoration: none;
+  color: var(--text-grey);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  width: 110px;
+}
+.contact-tel:hover,
+.contact-tel:focus {
   color: var(--light-blue);
 }
 /* Header----------------------------------------------------------------------------------------------- */
