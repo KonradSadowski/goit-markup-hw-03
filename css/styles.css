@@ -25,6 +25,7 @@ body {
 
 .section {
   padding: 94px 0;
+  margin-bottom: -94px;
 }
 /* Header -------------------------------------------------------------------------------------------------------------------------*/
 header {
@@ -163,28 +164,53 @@ h1 {
   padding: 30px 500px 200px 500px;
 }
 /* BUY SECTION------------------------------------------------------------------------------------- */
+
+/* lorem ipsum ------------------------------------------------------------------------------------------- */
 .articles {
   list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-left: 0;
 }
 .articles h4 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .articles p {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-grey);
+  width: 270px;
+  letter-spacing: 0.03em;
 }
+/* lorem ipsum ------------------------------------------------------------------------------------------- */
 
+/* our-range---------------------------------------------------------------------------------------------------- */
 .our-range h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-bottom: 50px;
 }
+.our-range-images {
+  display: flex;
+  gap: 30px;
+}
+/* our-range---------------------------------------------------------------------------------------------------- */
 
-.our team h3 {
+/* our-team---------------------------------------------------------------------------------------------------- */
+.our-team {
+  background-color: var(--button-grey-background);
+}
+.our-team h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -203,7 +229,7 @@ h1 {
   line-height: 1.19;
   color: var(--text-grey);
 }
-
+/* our-team---------------------------------------------------------------------------------------------------- */
 .portfolio-categories {
   list-style: none;
 }
