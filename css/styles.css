@@ -55,17 +55,6 @@ header nav {
 .studio-black {
   color: var(--logo-black);
 }
-.logo-footer {
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  color: var(--light-blue);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-.studio-white {
-  color: var(--text-white);
-}
 
 .menu-list {
   list-style: none;
@@ -209,25 +198,60 @@ h1 {
 /* our-team---------------------------------------------------------------------------------------------------- */
 .our-team {
   background-color: var(--button-grey-background);
+  padding: 0px 15px;
 }
 .our-team h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .our-team ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px 15px 94px;
+}
+.our-team figure {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin: 0px;
+}
+.our-team li {
+  width: 270px;
+  display: flex;
+}
+
+.employee-description span {
+  display: block;
 }
 .employee-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 30px 0px 10px;
 }
 
 .job {
   font-size: 16px;
   line-height: 1.19;
   color: var(--text-grey);
+  padding-bottom: 30;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /* our-team---------------------------------------------------------------------------------------------------- */
 .portfolio-categories {
@@ -262,27 +286,58 @@ h1 {
   line-height: 1.88;
   color: var(--text-grey);
 }
-
+/* footer------------------------------------------------------------------------------------------------------------ */
 .page-end {
   background-color: var(--background-dark);
 }
+
 .page-end a:hover,
 .page-end a:focus {
   color: var(--light-blue);
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: var(--light-blue);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: block;
+  text-align: left;
+  padding-top: 60px;
+}
+.studio-white {
+  color: var(--text-white);
+}
+
+footer address {
+  padding-top: 20px;
+  padding-bottom: 59px;
+}
+.footer-mail {
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 .headquarters {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-white);
+  display: block;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 .page-end address {
   font-style: normal;
+  display: block;
 }
 .page-end address a {
   font-size: 14px;
   line-height: 1.71;
   color: var(--addres-color);
   text-decoration: none;
+  display: block;
+  letter-spacing: 0.03em;
 }
 
 .page-end address a span {
@@ -292,3 +347,4 @@ h1 {
 .page-end address a:focus {
   color: var(--light-blue);
 }
+/* footer------------------------------------------------------------------------------------------------------------ */
