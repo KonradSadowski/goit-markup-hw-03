@@ -295,9 +295,7 @@ h1 {
   padding: 0px;
   margin: 0px;
 }
-/* .boxes li {
-  flex-basis: ((100% - 60px) / 3);
-} */
+
 .boxes img {
   display: block;
   vertical-align: middle;
