@@ -18,7 +18,7 @@ body {
   color: var(--main-black);
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -254,8 +254,17 @@ h1 {
   letter-spacing: 0.03em;
 }
 /* our-team---------------------------------------------------------------------------------------------------- */
+
+/* portfolio buttons-------------------------------------------------------------------------------------------- */
 .portfolio-categories {
   list-style: none;
+  display: flex;
+  gap: 8px;
+  padding-left: 310px;
+  padding-right: 318px;
+  padding-bottom: 56px;
+  margin: 0px;
+  align-items: center;
 }
 .portfolio-categories button {
   background: var(--button-grey-background);
@@ -265,6 +274,9 @@ h1 {
   line-height: 1.62;
   border: none;
   cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
 }
 .portfolio-categories button:hover {
   background: var(--light-blue);
@@ -273,19 +285,46 @@ h1 {
   border-radius: 4px;
   color: var(--text-white);
 }
+/* portfolio buttons-------------------------------------------------------------------------------------------- */
+/* portfolio boxes-------------------------------------------------------------------------------------------- */
 .boxes {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+/* .boxes li {
+  flex-basis: ((100% - 60px) / 3);
+} */
+.boxes img {
+  display: block;
+  vertical-align: middle;
+}
+.boxes figcaption {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.boxes figcaption span {
+  display: block;
 }
 .box-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  padding: 20px 24px 4px 24px;
+  letter-spacing: 0.06em;
 }
 .box-description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-grey);
+  padding: 0px 24px 20px 24px;
+  letter-spacing: 0.03em;
 }
+/* portfolio boxes-------------------------------------------------------------------------------------------- */
 /* footer------------------------------------------------------------------------------------------------------------ */
 .page-end {
   background-color: var(--background-dark);
