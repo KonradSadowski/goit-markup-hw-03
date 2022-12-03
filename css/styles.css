@@ -295,10 +295,11 @@ h1 {
   padding: 0px;
   margin: 0px;
 }
-
+.boxes figure {
+  margin: 0px;
+}
 .boxes img {
   display: block;
-  vertical-align: middle;
 }
 .boxes figcaption {
   background: #ffffff;
