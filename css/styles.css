@@ -11,6 +11,7 @@
 }
 * {
   box-sizing: border-box;
+  /* border: 1px solid green; */
 }
 
 body {
@@ -25,20 +26,21 @@ body {
 
 .section {
   padding: 94px 0;
-  margin-bottom: -94px;
 }
 /* Header -------------------------------------------------------------------------------------------------------------------------*/
 header {
   border-bottom: 1px solid #ececec;
-  background: #ffffff;
 }
-header .container {
+.header-wrapper {
   display: flex;
-}
-header nav {
-  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 12px;
 }
 
+.header-wrapper nav {
+  display: flex;
+}
 .logo-header {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -46,11 +48,9 @@ header nav {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  padding-left: 15px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   letter-spacing: 0.03em;
-  width: 145px;
+  display: flex;
+  padding: 24px 93px 25px 0px;
 }
 .studio-black {
   color: var(--logo-black);
@@ -58,14 +58,13 @@ header nav {
 
 .menu-list {
   list-style: none;
-  padding-left: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin: 0;
   display: flex;
-  width: 254px;
+  padding: 0;
+  align-items: center;
+  gap: 46px;
 }
-.menu-item {
+.menu-list li a {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -73,17 +72,15 @@ header nav {
   color: var(--main-black);
   letter-spacing: 0.02em;
 }
-[href='portfolio.html'] {
-  padding-left: 46px;
-  padding-right: 47px;
-}
-.menu-item:hover,
-.menu-item:focus {
+
+.menu-list li a:hover,
+.menu-list li a:focus {
   color: var(--light-blue);
 }
 
 .contacts {
-  padding: 32px 27px 32px 371px;
+  display: flex;
+  gap: 50px;
 }
 .contact-mail {
   text-decoration: none;
@@ -92,8 +89,6 @@ header nav {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-right: 50px;
-  width: 135px;
 }
 .contact-mail:hover,
 .contact-mail:focus {
@@ -106,7 +101,6 @@ header nav {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  width: 110px;
 }
 .contact-tel:hover,
 .contact-tel:focus {
@@ -118,40 +112,42 @@ header nav {
 .offer {
   background-color: var(--background-dark);
 }
+.offer-content {
+  padding: 200px 237px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-h1 {
+.offer h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: var(--text-white);
-  width: 696px;
-  margin: 0 252px;
-  padding-top: 200px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0px;
+  padding-bottom: 30px;
 }
 
 .offer button {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
   cursor: pointer;
   border: none;
-}
-.offer button span {
-  width: 117px;
-  height: 30px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   color: var(--text-white);
+  padding: 10px 42px;
+  display: flex;
+  margin: 0;
 }
-.offer-button-position {
-  padding: 30px 500px 200px 500px;
-}
+
 /* BUY SECTION------------------------------------------------------------------------------------- */
 
 /* lorem ipsum ------------------------------------------------------------------------------------------- */
@@ -160,26 +156,34 @@ h1 {
   display: flex;
   gap: 30px;
   align-items: center;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+}
+.articles li {
 }
 .articles h4 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 .articles p {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.78;
   color: var(--text-grey);
-  width: 270px;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 /* lorem ipsum ------------------------------------------------------------------------------------------- */
 
 /* our-range---------------------------------------------------------------------------------------------------- */
+.our-range {
+  margin-top: -94px;
+}
 .our-range h3 {
   font-weight: 700;
   font-size: 36px;
@@ -198,9 +202,8 @@ h1 {
 /* our-team---------------------------------------------------------------------------------------------------- */
 .our-team {
   background-color: var(--button-grey-background);
-  padding: 0px 15px;
 }
-.our-team h3 {
+.our-team-wrapper h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -208,49 +211,41 @@ h1 {
   justify-content: center;
   text-align: center;
   margin: 0px;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
-.our-team ul {
+.our-team-wrapper ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 0px;
-  padding: 0px 15px 94px;
+  padding: 0;
 }
-.our-team figure {
-  width: 270px;
-  height: 368px;
-  background: #ffffff;
+.our-team-wrapper figure {
+  background: var(--text-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin: 0px;
 }
-.our-team li {
-  width: 270px;
-  display: flex;
-}
 
-.employee-description span {
-  display: block;
+.employee-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  gap: 10px;
 }
 .employee-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
+  line-height: 1.05;
   letter-spacing: 0.03em;
-  padding: 30px 0px 10px;
 }
-
 .job {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.05;
   color: var(--text-grey);
-  padding-bottom: 30;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 /* our-team---------------------------------------------------------------------------------------------------- */
