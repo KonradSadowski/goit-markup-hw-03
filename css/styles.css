@@ -255,11 +255,9 @@ header {
   list-style: none;
   display: flex;
   gap: 8px;
-  padding-left: 310px;
-  padding-right: 318px;
   padding-bottom: 56px;
   margin: 0px;
-  align-items: center;
+  justify-content: center;
 }
 .portfolio-categories button {
   background: var(--button-grey-background);
@@ -297,36 +295,31 @@ header {
   display: block;
 }
 .boxes figcaption {
-  background: #ffffff;
+  background: var(--text-white);
   border: 1px solid #eeeeee;
   border-top: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 24px;
 }
-.boxes figcaption span {
-  display: block;
-}
+
 .box-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  padding: 20px 24px 4px 24px;
   letter-spacing: 0.06em;
 }
 .box-description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-grey);
-  padding: 0px 24px 20px 24px;
   letter-spacing: 0.03em;
 }
 /* portfolio boxes-------------------------------------------------------------------------------------------- */
 /* footer------------------------------------------------------------------------------------------------------------ */
 .page-end {
   background-color: var(--background-dark);
-}
-
-.page-end a:hover,
-.page-end a:focus {
-  color: var(--light-blue);
 }
 
 .logo-footer {
@@ -344,26 +337,21 @@ header {
   color: var(--text-white);
 }
 
-footer address {
+.addres-container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
   padding-top: 20px;
   padding-bottom: 59px;
 }
-.footer-mail {
-  padding-top: 9px;
-  padding-bottom: 10px;
-}
+
 .headquarters {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-white);
-  display: block;
   letter-spacing: 0.03em;
-  text-align: left;
 }
-.page-end address {
-  font-style: normal;
-  display: block;
-}
+
 .page-end address a {
   font-size: 14px;
   line-height: 1.71;
