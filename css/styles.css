@@ -73,7 +73,6 @@ header {
   color: var(--main-black);
   letter-spacing: 0.02em;
 }
-
 .menu-list li a:hover,
 .menu-list li a:focus {
   color: var(--light-blue);
