@@ -39,6 +39,7 @@ header {
 }
 .header-wrapper nav {
   display: flex;
+  align-items: center;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -48,8 +49,6 @@ header {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  display: flex;
-  width: fit-content;
 }
 .studio-black {
   color: var(--logo-black);
@@ -63,7 +62,6 @@ header {
   align-items: center;
   gap: 46px;
   padding-left: 93px;
-  padding-top: 1px;
 }
 .menu-list li a {
   text-decoration: none;
