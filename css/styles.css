@@ -37,11 +37,10 @@ header {
   align-items: center;
   padding: 24px 0 25px;
 }
-
 .header-wrapper nav {
   display: flex;
 }
-.header-wrapper .logo {
+.logo {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: var(--light-blue);
@@ -50,6 +49,7 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: flex;
+  width: fit-content;
 }
 .studio-black {
   color: var(--logo-black);
@@ -84,7 +84,7 @@ header {
   padding-right: 12px;
   padding-top: 1px;
 }
-.contact-mail {
+.contacts a {
   text-decoration: none;
   color: var(--text-grey);
   font-weight: 500;
@@ -92,20 +92,8 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--light-blue);
-}
-.contact-tel {
-  text-decoration: none;
-  color: var(--text-grey);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.contact-tel:hover,
-.contact-tel:focus {
+.contacts a:hover,
+.contacts a:focus {
   color: var(--light-blue);
 }
 /* Header----------------------------------------------------------------------------------------------- */
@@ -161,8 +149,7 @@ header {
   padding: 0;
   margin: 0;
 }
-.articles li {
-}
+
 .articles h4 {
   font-weight: 700;
   font-size: 14px;
@@ -324,17 +311,6 @@ header {
   background-color: var(--background-dark);
   padding-top: 60px;
 }
-.page-end .container .logo {
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  color: var(--light-blue);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  display: flex;
-  width: fit-content;
-}
 
 .studio-white {
   color: var(--text-white);
@@ -363,6 +339,7 @@ header {
   text-decoration: none;
   display: block;
   letter-spacing: 0.03em;
+  width: fit-content;
 }
 
 .page-end address a span {
